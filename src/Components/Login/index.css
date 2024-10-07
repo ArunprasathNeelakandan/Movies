@@ -59,3 +59,10 @@
     background-color: #E50914;
 
 }
+
+.error-msg {
+    color: #E50914;
+    margin-top: 20px;
+    align-self: center;
+    font-weight: bold;
+}
