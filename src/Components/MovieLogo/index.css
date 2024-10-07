@@ -1,0 +1,22 @@
+.movie-logo {
+    width: 180px;
+    height: 52px;
+    margin-top: 5%;
+    margin-left: 5%;
+    gap: 0px;
+    opacity: 0px;
+}
+
+@media screen and (max-width: 767px) {
+    .movie-logo {
+        width: 100px;
+        height: 27px;
+        top: 32px;
+        left: 32px;
+        padding: 0px;
+        gap: 0px;
+        opacity: 0px;
+
+    }
+    
+}
