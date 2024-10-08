@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import MovieLogo from '../MovieLogo'
+import Cookie from 'js-cookie'
 import './index.css'
 
 const Login =(props) => {
@@ -7,9 +8,9 @@ const Login =(props) => {
    const [password, setPassword] = useState('')
    const [errorMsg, setIsErrorMsg] = useState('')
 
-   const success = () => {
+   const success = (jwt_token) => {
       const {history} = props
-      console.log(history)
+      Cookie.set('jwt_token',jwt_token,{expires:7})
       history.replace('/')
    }
 
@@ -32,10 +33,10 @@ const Login =(props) => {
 
       const response = await fetch(url,options)
       const data = await response.json()
-      console.log(response.ok)
 
       if (response.ok === true) {
-          success()
+         console.log(data)
+          success(data.jwt_token)
       }
 
       else {
