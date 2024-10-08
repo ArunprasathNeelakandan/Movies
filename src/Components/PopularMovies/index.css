@@ -1,0 +1,23 @@
+.popular-bg {
+    background-color: black;
+    min-height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.popular-movie-container {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center;
+    padding-top: 20px;
+    row-gap: 10px;
+    column-gap: 10px;
+    list-style-type: none;
+}
+
+.popular-video-image {
+    max-height: 200px;
+    max-width: 200px;
+}

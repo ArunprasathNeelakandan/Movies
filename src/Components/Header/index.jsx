@@ -8,8 +8,11 @@ const Header = () => (
         <div className='desktop-header-bg'>
             <div className="header-logo-section">
                 <img src='Group 7399.svg' className="movie-logo-img" alt='movie-logo'/>
-                <p><Link to='/'>Home</Link></p>
-                <p><Link to='/popular-movies'>Popular</Link></p>
+                <Link to='/'><p className="para">Home</p>
+                </Link>
+                <Link to='/popular-movies'>
+                <p className="para">Popular</p>
+                </Link>
             </div>
             <div className="header-search-section">
                 <CiSearch style={{color:'white',height:'40px',width:'40px'}}/>

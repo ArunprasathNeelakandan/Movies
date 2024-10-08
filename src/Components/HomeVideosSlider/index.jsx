@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import MovieSliders from '../MovieSliders'
 import Loader from '../Loader'
 import Cookie from 'js-cookie'
+
 
 function HomeVideosSlider(props) {
     const [apiStatus,setApiStatus] = useState('initual')
@@ -33,6 +34,7 @@ function HomeVideosSlider(props) {
             
             setVideosData(formatData)
             setApiStatus('success')
+            console.log(formatData)
         } else {
             apiStatus('failure')
         }
