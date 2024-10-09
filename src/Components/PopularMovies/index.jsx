@@ -4,6 +4,7 @@ import Footer from '../Footer'
 import { useEffect, useState } from 'react'
 import Loader from '../Loader'
 import Cookie from 'js-cookie'
+import { Link } from 'react-router-dom'
 
 import './index.css'
 
@@ -65,9 +66,7 @@ const PopularMovies = () => {
                 {videosData.map((each) => {
                     const { id, posterPath } = each;
                     return (
-                        <li className="popular-videos-list" key={id}>
-                            <img src={posterPath} alt="popular video" className="popular-video-image" />
-                        </li>
+                            <Link to='/movie-detailes'><img src={posterPath} alt="popular video" className="popular-video-image" /></Link>
                     );
                 })}
             </>

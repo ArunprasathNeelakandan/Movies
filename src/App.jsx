@@ -4,6 +4,7 @@ import Login from './Components/Login/index.jsx'
 import Home from './Components/Home/index.jsx'
 import ProtectedRoute from './Components/protectedRoute/index.jsx'
 import PopularMovies from './Components/PopularMovies/index.jsx'
+import SearchPage from './Components/SearchPage/index.jsx'
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Route exact path='/login' component={Login}/>
       <ProtectedRoute exact path='/' component={Home} />
       <ProtectedRoute exact path='/popular-movies' component={PopularMovies}/>
+      <ProtectedRoute exact path='/search' component = {SearchPage} />
     </Switch>   
     </>
   )

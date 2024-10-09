@@ -40,7 +40,7 @@
     justify-content: space-between;
     align-items: center;
     width: 30%;
-    max-width: 200px;
+    max-width: 300px;
 }
 
 @media screen and (max-width:767px){
@@ -52,6 +52,31 @@
     }
 }
 
-.para {
+.home-text {
+    color: white;
+    text-decoration: none;
+}
+
+.header-container {
+    margin-left: 10px;
+    height: 20px;
+    background-color: rgb(53, 43, 43);
     color: white;
 }
+.search-button {
+    padding: 0px 10px;
+    /* height: 20px; */
+    height: 25px;
+}
+
+.search-input {
+    padding: 5px;
+    border-style: none;
+    height: 25px;
+   
+}
+
+.search-container {
+    height: 25px;
+}
+
