@@ -15,7 +15,7 @@ function MovieSliders(props) {
     slidesToShow: 4,
     slidesToScroll: 1,
     centerMode: true, 
-    centerPadding: '150px',
+    // centerPadding: '150px',
     adaptiveHeight:true,
     responsive: [
       {
@@ -25,9 +25,8 @@ function MovieSliders(props) {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 767,
         settings: {
-          centerPadding: '16px',
           slidesToShow: 2,
         }
       },
@@ -36,26 +35,22 @@ function MovieSliders(props) {
 
   const { data } = props;
 
- console.log(data)
+ 
 
   return (
-    <ul className="slider-list">
+    <div className="slider-list">
       <Slider {...settings}>
       {data.map((each)=>{
          const { id, posterPath, title } = each; 
          console.log(posterPath)
          return (
-           <li>
               <Link to={`/movies/${id}`}>
               <img src={posterPath} className="slider-image" alt={title} />
-              </Link> 
-           </li>
-             
-           
+              </Link>   
          );
       })}
     </Slider>
-    </ul>
+    </div>
     
   );
 }

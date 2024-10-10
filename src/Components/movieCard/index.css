@@ -1,0 +1,23 @@
+.Movie-card-bg {
+    height: 60vh;                    
+    background-size: 100% 100%;        
+    background-position: center;    
+    background-repeat: no-repeat;      
+}
+
+.text-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    min-height: 80%;
+    padding-right: 5%;
+    width: 90%;
+    max-width: 400px;    
+}
+
+.play-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+}

@@ -1,0 +1,25 @@
+.detail-bg {
+    min-height: 100vh;
+    background-color: black;
+
+}
+
+.similar-videos-bg {
+    height: 50vh;
+    overflow-y: auto;
+    width: 100%;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.similar-image {
+    flex: 1 1;
+    width: calc(24%);
+    max-height: 200px;
+    margin-right: 1%;
+    margin-top: 20px;
+}

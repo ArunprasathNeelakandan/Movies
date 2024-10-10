@@ -66,7 +66,7 @@ const PopularMovies = () => {
                 {videosData.map((each) => {
                     const { id, posterPath } = each;
                     return (
-                            <Link to='/movie-detailes'><img src={posterPath} alt="popular video" className="popular-video-image" /></Link>
+                            <Link to={`/movies/${id}`}><img src={posterPath} alt="popular video" className="popular-video-image" /></Link>
                     );
                 })}
             </>

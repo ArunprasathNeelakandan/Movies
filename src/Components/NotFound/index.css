@@ -1,0 +1,24 @@
+.not-found-bg {
+    background-image: url('../../../public/not\ found.svg');
+    background-size: 100% contain ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    color: white;
+    font-size: 2rem;
+    flex-direction: column;
+}
+
+.not-found-bg p {
+    max-width: 600px;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.not-found-bg button {
+    margin-top: 20px;
+}

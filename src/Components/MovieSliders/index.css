@@ -1,15 +1,25 @@
 
-.slider-list {
-  width: 100%;
-}
+/* .slider-list {
+  wi
+} */
 .slider-image {
-        max-width: 200px;
-        height: 100px;
-        
+     flex: 1 1 calc(25%-10px);
+     height: 100%;
+     width: 200px;
+     margin-left: 10px;
+
 }
 
-.heading {
-    color: orange;
+@media screen and (max-width:767px) {
+
+  .slider-image {
+    flex: 1 1 49%;
+    width: 100px;
+    height: 150px;
+  }
+  
 }
+
+
 
 

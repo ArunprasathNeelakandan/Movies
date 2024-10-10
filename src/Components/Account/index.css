@@ -1,0 +1,56 @@
+.Account-bg {
+    background-color: black;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.account-section {
+    min-height: 70vh;
+    background-color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+}
+
+.account-head {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.account-details {
+    display: flex;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.detailes-head {
+    width: 150px;
+}
+
+.detailes-card {
+    margin-left: 20px;
+    
+}
+
+.fade-text {
+    color: rgb(126, 119, 119);
+}
+
+.log-out-btn-bg {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+}
+
+.log-out-btn {
+    margin: 0px auto;
+    background-color: red;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+}

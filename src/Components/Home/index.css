@@ -1,85 +1,10 @@
- .home-bg {
-    display: flex;
-    flex-direction: column;
-}
-
-.home-section-1 {
-    display: flex;
-    flex-direction: column;
-    background-image: url('../../../public/Image\ \(1\).svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 50vh;
-    
-}
-
-@media screen and (max-width:767px) {
-    .home-section-1 {
-        background-image: url('../../../public/wp2581913-man-of-steel-wallpaper\ 1\ \(1\).svg');
-    }
-    
-}
-
-.header-bg {
-    height: 20%;
-}
-
-.home-text-container {
-    width: 90%;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 50%;
-    margin-left: 5%;
-    margin-top: auto;
-    margin-bottom: auto; 
-    color: white; 
-}
-
-.play-btn {
-    padding: 5px 10px;
-    border: none;
-}
-
-.home-section-2 {
+.home-bg {
+    min-height: 100vh;
     background-color: black;
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
     color: white;
 }
-
-.slider-container-1 {
-    height: 200px;
-}
-.slider-container-2 {
-    margin-top: 20px;
+.slider-section {
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 5px;
-}
-
-.slider-container-1 {
-    color: white;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5px;
-}
-
-@media screen and (max-width:767px){
-    .slider-container-1 {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-    .slider-container-2 {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-    
-}
-
-.footer-container {
-    padding-top: 40px;
-    color: white;
+    margin-top: 10px;
 }

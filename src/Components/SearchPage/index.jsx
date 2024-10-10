@@ -77,8 +77,8 @@ const SearchPage = () => {
 
                     {
                         data.map(each => (
-                            <Link to='/movie-detailes'>
-                                <img src={each.posterPath} className="search-image" />
+                            <Link to={`/movies/${each.id}`} key={each.id}>
+                                <img src={each.posterPath} className="search-image"/>
                             </Link>
                         ))
                     }
